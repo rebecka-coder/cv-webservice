@@ -11,5 +11,11 @@ package-lock.json fil.
 * projects.php - En fil som får webbtjänsten att fungera. I den inkluderas config-filen, och tre olika headers som t ex gör att man kan aktivera denna tjänst via en annan domän och använda samtliga metoder för GET, POST, PUT och DELETE. Kod för att kunna konvertera till JSON-format samt en switch som kan byta mellan olika metoder. Ett anrop görs för json som returnerar resultatet.
 * studies.php - se ovan.
 * work.php - se ovan.
-* Länk till api:et studier arbete projekt
+* Länk till api:et 
+
+[projekt](http://studenter.miun.se/~reho0301/dt173g/cvprojekt/cv-webservice/projects.php)
+
+[studier](http://studenter.miun.se/~reho0301/dt173g/cvprojekt/cv-webservice/studies.php)
+
+[arbete](http://studenter.miun.se/~reho0301/dt173g/cvprojekt/cv-webservice/work.php)
 
