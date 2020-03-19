@@ -1,0 +1,59 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.4.1deb2ubuntu2.1
+-- http://www.phpmyadmin.net
+--
+-- Värd: localhost
+-- Tid vid skapande: 17 mars 2020 kl 10:48
+-- Serverversion: 5.7.26-0ubuntu0.16.04.1-log
+-- PHP-version: 7.0.33-0ubuntu0.16.04.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Databas: `reho0301`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur `work`
+--
+
+CREATE TABLE `work` (
+  `id` int(11) NOT NULL,
+  `workPlace` varchar(200) NOT NULL,
+  `workTitle` varchar(200) NOT NULL,
+  `workDate` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumpning av Data i tabell `work`
+--
+
+INSERT INTO `work` (`id`, `workPlace`, `workTitle`, `workDate`) VALUES
+(28, 'HamngÃ¥rdens fÃ¶rskola', 'FÃ¶rskollÃ¤rare', '2009/07-2011/01'),
+(29, 'Solbackens fÃ¶rskola', 'FÃ¶rskollÃ¤rare', '2011/04-2013/04'),
+(30, 'Kabbelekans fÃ¶rskola', 'FÃ¶rskollÃ¤rare', '2013/04-2014/02'),
+(31, 'VidegÃ¥rdens fÃ¶rskola', 'FÃ¶rskollÃ¤rare', '2014/02-2015/02'),
+(32, 'Ã–negÃ¥rdens fÃ¶rskola', 'FÃ¶rskollÃ¤rare', '2015/02-PÃ¥gÃ¥ende');
+
+--
+-- Index för dumpade tabeller
+--
+
+--
+-- Index för tabell `work`
+--
+ALTER TABLE `work`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT för dumpade tabeller
+--
+
+--
+-- AUTO_INCREMENT för tabell `work`
+--
+ALTER TABLE `work`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;

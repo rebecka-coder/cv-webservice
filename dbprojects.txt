@@ -1,0 +1,59 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.4.1deb2ubuntu2.1
+-- http://www.phpmyadmin.net
+--
+-- Värd: localhost
+-- Tid vid skapande: 17 mars 2020 kl 10:47
+-- Serverversion: 5.7.26-0ubuntu0.16.04.1-log
+-- PHP-version: 7.0.33-0ubuntu0.16.04.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Databas: `reho0301`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur `projects`
+--
+
+CREATE TABLE `projects` (
+  `id` int(11) NOT NULL,
+  `projectTitle` varchar(200) NOT NULL,
+  `url` varchar(1000) NOT NULL,
+  `description` varchar(5000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumpning av Data i tabell `projects`
+--
+
+INSERT INTO `projects` (`id`, `projectTitle`, `url`, `description`) VALUES
+(4, 'webbI', 'http://studenter.miun.se/~reho0301/dt057g/moment5%20-%20projekt/', 'En uppgift frÃ¥n fÃ¶rsta kursen i utbildningen, "Webbutveckling I". Webbplatsen skulle vara baserad pÃ¥ ett befintlig eller fiktivt fÃ¶retag, med fokus pÃ¥ tydligt innehÃ¥ll och tydlig grafisk profil.'),
+(5, 'skogsfÃ¶retaget', 'http://studenter.miun.se/~reho0301/dt152g/moment1.3/', 'Uppgift i kursen "Webbdesign fÃ¶r CMS". Vi skulle fritt designa om en existerande hemsida som var ett skogsfÃ¶retag..'),
+(6, 'typografi', 'http://studenter.miun.se/~reho0301/gd008g/malluppgift/', 'En uppgift frÃ¥n kursen "typografi och form fÃ¶r webben". Stor fokus pÃ¥ teckensnitt och lÃ¤sbarheten.'),
+(7, 'webbII', 'http://studenter.miun.se/~reho0301/dt093g/moment4%20-%20projekt%20php/index.php', 'En uppgift frÃ¥n kursen "webbII" dÃ¤r vi skulle skapa en bloggportal med stÃ¶d fÃ¶r dynamik med hjÃ¤lp PHP och databaskopplingar. obs! visas ej till fullo med inlÃ¤gg osv pga raderad databas.'),
+(8, 'treokomp', 'http://studenter.miun.se/~reho0301/writeable/treokompallstars/wordpress/', 'Denna uppgift kommer frÃ¥n kursen, Webbdesign fÃ¶r CMS. FrÃ¥n eget skapat tema i wordpress skulle webbplatsen presentera ett fÃ¶retag som erbjuder tjÃ¤nster/produkter.');
+
+--
+-- Index för dumpade tabeller
+--
+
+--
+-- Index för tabell `projects`
+--
+ALTER TABLE `projects`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT för dumpade tabeller
+--
+
+--
+-- AUTO_INCREMENT för tabell `projects`
+--
+ALTER TABLE `projects`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;

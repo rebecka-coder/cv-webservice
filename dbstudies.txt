@@ -1,0 +1,59 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.4.1deb2ubuntu2.1
+-- http://www.phpmyadmin.net
+--
+-- Värd: localhost
+-- Tid vid skapande: 17 mars 2020 kl 10:46
+-- Serverversion: 5.7.26-0ubuntu0.16.04.1-log
+-- PHP-version: 7.0.33-0ubuntu0.16.04.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Databas: `reho0301`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur `studies`
+--
+
+CREATE TABLE `studies` (
+  `id` int(11) NOT NULL,
+  `university` varchar(200) NOT NULL,
+  `studyName` varchar(200) NOT NULL,
+  `studyDate` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumpning av Data i tabell `studies`
+--
+
+INSERT INTO `studies` (`id`, `university`, `studyName`, `studyDate`) VALUES
+(5, 'Wargentinsskolan gymnasium', 'SamhÃ¤lle ekonomi med sprÃ¥klig inriktning', '1995/09-1998/06'),
+(6, 'Ã–sterÃ¤ngsskolan komvux', 'Grafisk kommunikation A', '2001/09-2001/12'),
+(7, 'Ã–sterÃ¤ngsskolan komvux', 'Webbdesign', '2001/09-2001/12'),
+(8, 'UmeÃ¥ universitet', 'FÃ¶rskollÃ¤rare/Fritidspedagog', '2005/09-2009/06'),
+(9, 'Mittuniversitetet Sundsvall', 'Webbutveckling', '2018/09-PÃ¥gÃ¥ende');
+
+--
+-- Index för dumpade tabeller
+--
+
+--
+-- Index för tabell `studies`
+--
+ALTER TABLE `studies`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT för dumpade tabeller
+--
+
+--
+-- AUTO_INCREMENT för tabell `studies`
+--
+ALTER TABLE `studies`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
